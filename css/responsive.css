@@ -1,0 +1,195 @@
+/* Responsive Styles */
+
+/* Large Screens (Desktops) */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 58%;
+  }
+  
+  .hero .container {
+    padding: 0 4.8rem;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 56%;
+  }
+  
+  h1 {
+    font-size: 4.2rem;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+  }
+  
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-content {
+    margin-bottom: 4.8rem;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .benefit-icon {
+    margin: 0 auto 1.6rem;
+  }
+  
+  .stat-counter {
+    justify-content: center;
+  }
+}
+
+/* Small Screens (Tablets & Large Phones) */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 54%;
+  }
+  
+  .nav-toggle {
+    display: flex;
+    z-index: 1001;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    transition: var(--transition);
+    box-shadow: -0.5rem 0 1.5rem rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .nav-menu.active {
+    right: 0;
+  }
+  
+  .nav-toggle.active span:nth-child(1) {
+    transform: translateY(0.9rem) rotate(45deg);
+  }
+  
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle.active span:nth-child(3) {
+    transform: translateY(-0.9rem) rotate(-45deg);
+  }
+  
+  .nav-menu li {
+    margin: 0;
+  }
+  
+  .calculator {
+    flex-direction: column;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}
+
+/* Extra Small Screens (Phones) */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 52%;
+  }
+  
+  .section {
+    padding: 6.4rem 0;
+  }
+  
+  h1 {
+    font-size: 3.6rem;
+  }
+  
+  h2 {
+    font-size: 2.8rem;
+  }
+  
+  h3 {
+    font-size: 2.2rem;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .hero {
+    padding: 9.6rem 0 6.4rem;
+  }
+  
+  .feature-card, .cybersafe-feature, .join-option {
+    padding: 2.4rem;
+  }
+  
+  .qr-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .contact-info {
+    order: 2;
+  }
+  
+  .contact-form {
+    order: 1;
+    margin-bottom: 3.2rem;
+  }
+  
+  .back-to-top {
+    bottom: 2.4rem;
+    right: 2.4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+/* Tiny Screens */
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+  
+  .card, .feature-card, .benefit-item, .impact-card, .cybersafe-feature, .join-option {
+    min-width: 100%;
+  }
+}
+
+/* Height-based media queries */
+@media screen and (max-height: 700px) {
+  .hero {
+    min-height: auto;
+    padding: 12rem 0 6.4rem;
+  }
+}
